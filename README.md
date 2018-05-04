@@ -6,6 +6,9 @@ Reinventing the wheel according to materials from `CLRS` and other sources.
 
 ---
 - [I. Sorting](#1.-Sorting)
+- [II. Data Structures](#data-structures)
+- [III. Graph Algorithms](#graph-algorithms)
+- [IV. Selecte Topics](#selected-topics)
 
 ---
 ## Sorting
