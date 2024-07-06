@@ -1,7 +1,8 @@
 Graph Theory
 ============
 
-.. contents:: :local:
+.. contents:: Table of Contents
+    :depth: 3
 
 Glossary
 ========
