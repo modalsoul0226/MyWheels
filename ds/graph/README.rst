@@ -1,7 +1,10 @@
-Glossary
-========
+Graph Theory
+============
 
 .. contents:: :local:
+
+Glossary
+========
 
 Adjacent
   A vertex is adjacent to another vertex if they share an edge.
