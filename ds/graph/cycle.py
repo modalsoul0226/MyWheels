@@ -1,20 +1,24 @@
-from typing import List
+"""Check if a directed graph contains a cycle.
+
+Examples:
+    - Course Schedule: https://leetcode.com/problems/course-schedule/description/
+"""
 
 
 class Solution:
-    def to_graph(self, V: int, E: List[List[int]]) -> List[List[int]]:
+    def to_graph(self, V: int, E: list[list[int]]) -> list[list[int]]:
         """Concert the set of edges to a directed graph in the form of adjacency list.
 
         Parameters
         ----------
         V : int
             The number of vertices
-        E : List[List[int]]
+        E : list[list[int]]
             The set of edges
 
         Returns
         -------
-        List[List[int]]
+        list[list[int]]
             Directed graph in the form of adjacency list
         """
         G = [[] for _ in range(V)]
@@ -26,16 +30,16 @@ class Solution:
 
         return G
 
-    def dfs(self, v: int, G: List[List[int]], visited: List[int]):
+    def dfs(self, v: int, G: list[list[int]], visited: list[int]):
         """Perform a depth-first search and check if the graph is acyclic.
 
         Parameters
         ----------
         v : int
             The current vertex
-        G : List[List[int]]
+        G : list[list[int]]
             Directed graph in the form of adjacency list
-        visited : List[int]
+        visited : list[int]
             The visited array, visited[v] can be:
             * -1 meaning v is being visited, i.e. in the current recursion stack
             * 1 meaning v has been visited (as well as all vertices reachable)
@@ -67,7 +71,7 @@ class Solution:
 
         return True
 
-    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+    def canFinish(self, numCourses: int, prerequisites: list[list[int]]) -> bool:
         G = self.to_graph(numCourses, prerequisites)
         visited = [0 for _ in range(numCourses)]
 
